@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Servicios de Luna — Agencia de Enfermería. Enfermeras a domicilio, consulta médica, oxígeno, nutriólogo, psicología, fisioterapia, laboratorios, ambulancia y más. Cuidamos a quien más quieres." />
-  <meta name="keywords" content="agencia de enfermería CDMX, enfermeras a domicilio, cuidadoras adultos mayores, consulta médica domicilio, oxígeno a domicilio, Servicios de Luna" />
+  <meta name="description" content="Fisioterapia y Rehabilitación EMERA en CDMX. Especialistas en fisioterapia, traumatología, lesiones deportivas, geriatría, dermatología y terapia a domicilio. Agenda tu cita hoy." />
+  <meta name="keywords" content="fisioterapia CDMX, rehabilitación física, terapia física domicilio, lesiones deportivas, traumatología ortopedia, dermatólogo, EMERA, masaje terapéutico" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Servicios de Luna — Agencia de Enfermería | Atención Integral a Domicilio" />
-  <meta property="og:description" content="Cuidamos a quien más quieres. Enfermeras, consulta médica, oxígeno, nutriólogo, psicología, fisioterapia, laboratorios y más a domicilio." />
+  <meta property="og:title" content="Fisioterapia y Rehabilitación EMERA" />
+  <meta property="og:description" content="Recupera tu movimiento y vive sin dolor. Especialistas en fisioterapia y rehabilitación con atención personalizada y terapia a domicilio." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80" />
-  <title>Servicios de Luna — Agencia de Enfermería | Atención Integral a Domicilio</title>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80" />
+  <title>Fisioterapia y Rehabilitación EMERA | Recupera tu Movimiento</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -19,13 +19,12 @@
       theme: {
         extend: {
           colors: {
-            'brand-navy':       '#0E1654',
-            'brand-navy-light': '#1A2880',
-            'brand-navy-dark':  '#07102E',
-            'brand-gold':       '#C8950F',
-            'brand-gold-light': '#E8B93A',
-            'brand-gold-dark':  '#9A7208',
-            'brand-silver':     '#8A9AAA',
+            'brand-blue':       '#1565C0',
+            'brand-blue-light': '#1976D2',
+            'brand-blue-dark':  '#0D47A1',
+            'brand-green':      '#43A047',
+            'brand-green-light':'#66BB6A',
+            'brand-green-dark': '#2E7D32',
           },
           fontFamily: {
             'sans':    ['Inter', 'system-ui', 'sans-serif'],
@@ -49,26 +48,6 @@
 </head>
 <body class="font-sans bg-white overflow-x-hidden">
 
-  <!-- Shared SVG sprite — single source of truth for the moon+lamp logo, referenced via <use> -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#D8E0EA"/>
-        <stop offset="100%" stop-color="#8A9AAA"/>
-      </linearGradient>
-      <symbol id="logo-moon-lamp" viewBox="0 0 80 80">
-        <path d="M44 10C28 10 16 23 16 40C16 57 28 70 44 70C34 60 30 50.5 30 40C30 29.5 34 20 44 10Z" fill="url(#moonGrad)"/>
-        <path d="M50 50Q57 42 64 50L62 55H52Z" fill="#C8950F"/>
-        <path d="M64 49Q72 45 70 52Q68 57 62 53" fill="#C8950F"/>
-        <path d="M52 54Q47 54 48 60Q49 66 56 63" fill="none" stroke="#C8950F" stroke-width="2.2" stroke-linecap="round"/>
-        <rect x="55" y="55" width="4" height="8" rx="2" fill="#9A7208"/>
-        <ellipse cx="57" cy="63" rx="7" ry="2.2" fill="#C8950F"/>
-        <ellipse cx="57" cy="47" rx="3" ry="4" fill="#E8B93A" opacity="0.9"/>
-        <ellipse cx="57" cy="46" rx="1.5" ry="2.5" fill="#FFF3B0" opacity="0.8"/>
-      </symbol>
-    </defs>
-  </svg>
-
   <!-- ============================================================ -->
   <!-- LOADER PREMIUM                                               -->
   <!-- ============================================================ -->
@@ -79,12 +58,29 @@
           <circle class="loader-ring-track" cx="60" cy="60" r="52" />
           <circle class="loader-ring-progress" cx="60" cy="60" r="52" />
         </svg>
-        <!-- Moon + Lamp Logo -->
-        <svg class="loader-logo-img" viewBox="0 0 80 80"><use href="#logo-moon-lamp"/></svg>
+        <svg class="loader-logo-img" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Cuerpo humano estilizado -->
+          <circle cx="40" cy="18" r="8" fill="#1565C0"/>
+          <!-- Torso -->
+          <rect x="33" y="28" width="14" height="18" rx="4" fill="#1565C0"/>
+          <!-- Brazo izquierdo -->
+          <rect x="20" y="29" width="13" height="5" rx="2.5" fill="#43A047" transform="rotate(20 20 29)"/>
+          <!-- Brazo derecho (con cruz médica) -->
+          <rect x="47" y="29" width="13" height="5" rx="2.5" fill="#43A047" transform="rotate(-20 60 29)"/>
+          <!-- Cruz médica en mano derecha -->
+          <rect x="58" y="25" width="8" height="3" rx="1.5" fill="#1976D2"/>
+          <rect x="60.5" y="22.5" width="3" height="8" rx="1.5" fill="#1976D2"/>
+          <!-- Piernas -->
+          <rect x="33" y="44" width="6" height="16" rx="3" fill="#1565C0"/>
+          <rect x="41" y="44" width="6" height="16" rx="3" fill="#1565C0"/>
+          <!-- Ondas / movimiento -->
+          <path d="M8 55 Q12 51 16 55 Q20 59 24 55" stroke="#43A047" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M8 62 Q12 58 16 62 Q20 66 24 62" stroke="#66BB6A" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
       </div>
       <div class="loader-brand">
-        <span class="loader-brand-top">AGENCIA DE ENFERMERÍA</span>
-        <span class="loader-brand-bottom">SERVICIOS DE LUNA</span>
+        <span class="loader-brand-top">FISIOTERAPIA Y REHABILITACIÓN</span>
+        <span class="loader-brand-bottom">EMERA</span>
       </div>
       <div class="loader-bar-wrap">
         <div class="loader-bar-fill" id="loader-bar"></div>
@@ -100,27 +96,39 @@
 
       <!-- Logo -->
       <a href="#inicio" class="flex items-center gap-2 group">
-        <svg class="w-12 h-12 drop-shadow-md" viewBox="0 0 80 80"><use href="#logo-moon-lamp"/></svg>
+        <svg class="w-12 h-12 drop-shadow-md" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="18" r="8" fill="#1565C0"/>
+          <rect x="33" y="28" width="14" height="18" rx="4" fill="#1565C0"/>
+          <rect x="20" y="29" width="13" height="5" rx="2.5" fill="#43A047" transform="rotate(20 20 29)"/>
+          <rect x="47" y="29" width="13" height="5" rx="2.5" fill="#43A047" transform="rotate(-20 60 29)"/>
+          <rect x="58" y="25" width="8" height="3" rx="1.5" fill="#1976D2"/>
+          <rect x="60.5" y="22.5" width="3" height="8" rx="1.5" fill="#1976D2"/>
+          <rect x="33" y="44" width="6" height="16" rx="3" fill="#1565C0"/>
+          <rect x="41" y="44" width="6" height="16" rx="3" fill="#1565C0"/>
+          <path d="M8 55 Q12 51 16 55 Q20 59 24 55" stroke="#43A047" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M8 62 Q12 58 16 62 Q20 66 24 62" stroke="#66BB6A" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
         <div>
-          <span class="font-display font-bold text-xs leading-none nav-logo-primary block">AGENCIA DE ENFERMERÍA</span>
-          <span class="font-display font-black text-lg leading-none nav-logo-secondary block">SERVICIOS DE LUNA</span>
+          <span class="font-display font-bold text-xs leading-none nav-logo-primary block">FISIOTERAPIA Y REHABILITACIÓN</span>
+          <span class="font-display font-black text-lg leading-none nav-logo-secondary block">EMERA</span>
         </div>
       </a>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex items-center gap-6">
-        <li><a href="#nosotros"   class="nav-link font-medium text-sm transition-colors">Nosotros</a></li>
-        <li><a href="#servicios"  class="nav-link font-medium text-sm transition-colors">Servicios</a></li>
-        <li><a href="#beneficios" class="nav-link font-medium text-sm transition-colors">Beneficios</a></li>
-        <li><a href="#proceso"    class="nav-link font-medium text-sm transition-colors">Proceso</a></li>
-        <li><a href="#contacto"   class="nav-link font-medium text-sm transition-colors">Contacto</a></li>
+        <li><a href="#nosotros"   class="nav-link font-medium text-sm transition-colors hover:text-brand-green">Nosotros</a></li>
+        <li><a href="#servicios"  class="nav-link font-medium text-sm transition-colors hover:text-brand-green">Servicios</a></li>
+        <li><a href="#estetica"   class="nav-link font-medium text-sm transition-colors hover:text-brand-green">Estética</a></li>
+        <li><a href="#beneficios" class="nav-link font-medium text-sm transition-colors hover:text-brand-green">Beneficios</a></li>
+        <li><a href="#proceso"    class="nav-link font-medium text-sm transition-colors hover:text-brand-green">Proceso</a></li>
+        <li><a href="#contacto"   class="nav-link font-medium text-sm transition-colors hover:text-brand-green">Contacto</a></li>
       </ul>
 
       <!-- CTA Button -->
-      <a href="https://wa.me/5215540036237?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank"
-         class="hidden md:flex items-center gap-2 btn-gold text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-        <i data-lucide="phone" class="w-4 h-4"></i>
-        Contáctanos
+      <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20fisioterapia" target="_blank"
+         class="hidden md:flex items-center gap-2 bg-brand-green hover:bg-brand-green-dark text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+        <i data-lucide="calendar-check" class="w-4 h-4"></i>
+        Agendar Cita
       </a>
 
       <!-- Mobile Burger -->
@@ -136,14 +144,15 @@
       <ul class="flex flex-col gap-3">
         <li><a href="#nosotros"   class="mobile-nav-link block py-2 font-medium">Nosotros</a></li>
         <li><a href="#servicios"  class="mobile-nav-link block py-2 font-medium">Servicios</a></li>
+        <li><a href="#estetica"   class="mobile-nav-link block py-2 font-medium">Estética</a></li>
         <li><a href="#beneficios" class="mobile-nav-link block py-2 font-medium">Beneficios</a></li>
         <li><a href="#proceso"    class="mobile-nav-link block py-2 font-medium">Proceso</a></li>
         <li><a href="#contacto"   class="mobile-nav-link block py-2 font-medium">Contacto</a></li>
         <li>
-          <a href="https://wa.me/5215540036237?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank"
-             class="flex items-center justify-center gap-2 btn-gold text-white font-semibold py-3 rounded-full text-sm mt-2">
-            <i data-lucide="phone" class="w-4 h-4"></i>
-            Contáctanos
+          <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20fisioterapia" target="_blank"
+             class="flex items-center justify-center gap-2 bg-brand-green text-white font-semibold py-3 rounded-full text-sm mt-2">
+            <i data-lucide="calendar-check" class="w-4 h-4"></i>
+            Agendar Cita
           </a>
         </li>
       </ul>
@@ -162,8 +171,8 @@
       <div class="hero-bg absolute inset-0 z-0" id="hero-bg-wrap">
         <img
           id="hero-bg-img"
-          src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1920&q=80"
-          alt="Enfermera profesional brindando atención a domicilio"
+          src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1920&q=80"
+          alt="Especialista en fisioterapia y rehabilitación"
           class="w-full h-full object-cover object-center"
           loading="eager"
         />
@@ -183,48 +192,48 @@
 
         <div class="hero-el hero-el--badge inline-flex items-center gap-2 bg-white/12 backdrop-blur-xl border border-white/25 text-white text-xs font-semibold px-5 py-2.5 rounded-full mb-7 shadow-2xl">
           <span class="badge-dot"></span>
-          Servicios de Luna · Agencia de Enfermería · Atención a Domicilio 24/7
+          EMERA · Fisioterapia y Rehabilitación · A Domicilio
         </div>
 
         <h1 class="font-display font-black text-white leading-[1.05] mb-5">
           <span class="hero-el hero-el--title-1 block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-            Cuidamos a Quien
+            Recupera tu Movimiento,
           </span>
-          <span class="hero-el hero-el--title-2 block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gradient-gold">
-            Más Quieres
+          <span class="hero-el hero-el--title-2 block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gradient-green">
+            Vive Sin Dolor
           </span>
         </h1>
 
         <p class="hero-el hero-el--sub text-white/85 text-lg sm:text-xl md:text-2xl font-light max-w-2xl mx-auto mb-9 leading-relaxed">
-          Atención integral de salud en la comodidad de tu hogar. Enfermeras, médicos, oxígeno, fisioterapia y más — siempre con profesionalismo y calidez.
+          Terapia física especializada y personalizada para que recuperes tu calidad de vida. Atención en clínica y a domicilio.
         </p>
 
         <div class="hero-el hero-el--ctas flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
-          <a href="https://wa.me/5215540036237?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20salud%20a%20domicilio" target="_blank"
-             class="cta-primary group relative overflow-hidden flex items-center gap-2.5 text-white font-bold text-base px-9 py-4 rounded-full shadow-2xl">
-            <i data-lucide="message-circle" class="w-5 h-5 relative z-10"></i>
-            <span class="relative z-10">Solicitar Servicio</span>
+          <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20fisioterapia" target="_blank"
+             class="cta-primary group relative overflow-hidden flex items-center gap-2.5 bg-brand-green text-white font-bold text-base px-9 py-4 rounded-full shadow-2xl">
+            <i data-lucide="calendar-check" class="w-5 h-5 relative z-10"></i>
+            <span class="relative z-10">Reserva tu Cita</span>
             <span class="cta-shimmer" aria-hidden="true"></span>
           </a>
           <a href="#servicios"
              class="cta-secondary flex items-center gap-2.5 bg-white/12 backdrop-blur-xl hover:bg-white/22 border border-white/35 text-white font-semibold text-base px-9 py-4 rounded-full transition-all duration-500">
-            <i data-lucide="stethoscope" class="w-5 h-5"></i>
+            <i data-lucide="activity" class="w-5 h-5"></i>
             Ver Servicios
           </a>
         </div>
 
         <div class="hero-el hero-el--cards grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           <div class="stat-card glass-card p-5 rounded-2xl text-center" data-float-delay="0">
-            <div class="stat-num font-display font-black text-3xl text-gold-light" data-target="1000" data-prefix="+">+1000</div>
-            <div class="text-white/75 text-sm mt-1 font-medium">Pacientes atendidos</div>
+            <div class="stat-num font-display font-black text-3xl text-brand-green-light" data-target="500" data-prefix="+">+500</div>
+            <div class="text-white/75 text-sm mt-1 font-medium">Pacientes recuperados</div>
           </div>
           <div class="stat-card glass-card p-5 rounded-2xl text-center" data-float-delay="200">
-            <div class="stat-num font-display font-black text-3xl text-gold-light">5★</div>
+            <div class="stat-num font-display font-black text-3xl text-brand-green-light">5★</div>
             <div class="text-white/75 text-sm mt-1 font-medium">Calificación promedio</div>
           </div>
           <div class="stat-card glass-card p-5 rounded-2xl text-center" data-float-delay="400">
-            <div class="stat-num font-display font-black text-3xl text-gold-light" data-target="9" data-suffix="+">9+</div>
-            <div class="text-white/75 text-sm mt-1 font-medium">Servicios disponibles</div>
+            <div class="stat-num font-display font-black text-3xl text-brand-green-light" data-target="8" data-suffix="+">8+</div>
+            <div class="text-white/75 text-sm mt-1 font-medium">Especialidades tratadas</div>
           </div>
         </div>
 
@@ -247,57 +256,61 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           <div class="about-image-wrapper relative animate-on-scroll">
-            <div class="about-img-main rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&q=80"
-                alt="Enfermera profesional de Servicios de Luna cuidando a adulto mayor"
-                class="w-full h-80 lg:h-[500px] object-cover object-center"
-                loading="lazy"
-              />
+            <div class="about-img-main rounded-3xl overflow-hidden shadow-2xl w-full h-80 lg:h-[500px] bg-gradient-to-br from-brand-blue to-brand-blue-dark flex items-center justify-center">
+              <svg class="w-32 h-32 lg:w-40 lg:h-40 opacity-95" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Fisioterapia y Rehabilitación EMERA">
+                <circle cx="40" cy="18" r="8" fill="#FFFFFF"/>
+                <rect x="33" y="28" width="14" height="18" rx="4" fill="#FFFFFF"/>
+                <rect x="20" y="29" width="13" height="5" rx="2.5" fill="#66BB6A" transform="rotate(20 20 29)"/>
+                <rect x="47" y="29" width="13" height="5" rx="2.5" fill="#66BB6A" transform="rotate(-20 60 29)"/>
+                <rect x="33" y="44" width="6" height="16" rx="3" fill="#FFFFFF"/>
+                <rect x="41" y="44" width="6" height="16" rx="3" fill="#FFFFFF"/>
+                <path d="M8 55 Q12 51 16 55 Q20 59 24 55" stroke="#66BB6A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <path d="M8 62 Q12 58 16 62 Q20 66 24 62" stroke="#66BB6A" stroke-width="2" stroke-linecap="round" fill="none"/>
+              </svg>
             </div>
             <div class="about-badge-float absolute -bottom-5 -right-5 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100 flex items-center gap-3">
-              <div class="w-12 h-12 bg-brand-gold/10 rounded-xl flex items-center justify-center">
-                <i data-lucide="award" class="w-6 h-6 text-brand-gold"></i>
+              <div class="w-12 h-12 bg-brand-green/10 rounded-xl flex items-center justify-center">
+                <i data-lucide="award" class="w-6 h-6 text-brand-green"></i>
               </div>
               <div>
-                <div class="font-display font-black text-xl text-brand-navy-dark leading-none">Agencia</div>
-                <div class="text-xs text-gray-500 font-medium">Certificada y Confiable</div>
+                <div class="font-display font-black text-2xl text-brand-blue-dark leading-none">Lic.</div>
+                <div class="text-xs text-gray-500 font-medium">Terapia Física Certificada</div>
               </div>
             </div>
-            <div class="about-accent absolute -top-4 -left-4 w-24 h-24 bg-brand-gold/10 rounded-2xl -z-10"></div>
-            <div class="about-accent-2 absolute -bottom-8 -left-8 w-40 h-40 bg-brand-navy/5 rounded-full -z-10"></div>
+            <div class="about-accent absolute -top-4 -left-4 w-24 h-24 bg-brand-green/10 rounded-2xl -z-10"></div>
+            <div class="about-accent-2 absolute -bottom-8 -left-8 w-40 h-40 bg-brand-blue/5 rounded-full -z-10"></div>
           </div>
 
           <div class="animate-on-scroll">
-            <span class="section-badge inline-block bg-brand-navy/10 text-brand-navy font-semibold text-sm px-4 py-1.5 rounded-full mb-5">Quiénes Somos</span>
-            <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-navy-dark mb-5 leading-tight">
-              Más que una agencia,<br>somos tu equipo de<br>
-              <span class="text-brand-gold">salud en casa</span>
+            <span class="section-badge inline-block bg-brand-blue/10 text-brand-blue font-semibold text-sm px-4 py-1.5 rounded-full mb-5">Quiénes Somos</span>
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-blue-dark mb-5 leading-tight">
+              Especialistas que te ayudan<br>a recuperar tu<br>
+              <span class="text-brand-green">calidad de vida</span>
             </h2>
             <p class="text-gray-500 leading-relaxed mb-5">
-              <strong class="text-brand-navy-dark">Servicios de Luna</strong> es una agencia de enfermería comprometida con brindar atención integral, humana y profesional para que tú y tu familia reciban el mejor cuidado sin salir de casa. Contamos con personal certificado y experiencia comprobada.
+              En <strong class="text-brand-blue-dark">EMERA</strong> somos un equipo especializado en fisioterapia y rehabilitación, liderado por la Lic. Anahí Álvarez, con amplia experiencia en recuperación funcional y tratamiento de lesiones. Nos dedicamos a brindar atención integral, humana y de alta calidad a cada paciente, sin importar su condición o edad.
             </p>
             <p class="text-gray-500 leading-relaxed mb-8">
-              Desde enfermeras y cuidadoras especializadas hasta consultas médicas, renta de oxígeno, nutriología, psicología, fisioterapia, laboratorios y traslados en ambulancia — todo lo que necesitas para el cuidado completo de tu salud.
+              Ofrecemos atención personalizada en clínica y <strong class="text-brand-blue-dark">terapia a domicilio</strong>, adaptándonos a tus necesidades. Cada tratamiento se diseña con técnicas modernas, evidencia científica y calidez humana.
             </p>
             <div class="grid grid-cols-3 gap-4 mb-8">
               <div class="text-center p-3 bg-gray-50 rounded-2xl">
-                <div class="font-display font-black text-2xl text-brand-gold">+1000</div>
+                <div class="font-display font-black text-2xl text-brand-green">+500</div>
                 <div class="text-xs text-gray-500 mt-0.5">Pacientes</div>
               </div>
               <div class="text-center p-3 bg-gray-50 rounded-2xl">
-                <div class="font-display font-black text-2xl text-brand-navy">9+</div>
-                <div class="text-xs text-gray-500 mt-0.5">Servicios</div>
+                <div class="font-display font-black text-2xl text-brand-blue">8</div>
+                <div class="text-xs text-gray-500 mt-0.5">Especialidades</div>
               </div>
               <div class="text-center p-3 bg-gray-50 rounded-2xl">
-                <div class="font-display font-black text-2xl text-brand-gold">5★</div>
+                <div class="font-display font-black text-2xl text-brand-green">5★</div>
                 <div class="text-xs text-gray-500 mt-0.5">Calificación</div>
               </div>
             </div>
-            <a href="https://wa.me/5215540036237?text=Hola%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Servicios%20de%20Luna" target="_blank"
-               class="inline-flex items-center gap-2.5 btn-navy text-white font-bold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
-              <i data-lucide="message-circle" class="w-5 h-5"></i>
-              Solicitar Información
+            <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20fisioterapia" target="_blank"
+               class="inline-flex items-center gap-2.5 bg-brand-blue hover:bg-brand-blue-dark text-white font-bold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              Agenda tu Consulta
             </a>
           </div>
 
@@ -312,202 +325,332 @@
       <div class="container mx-auto px-4">
 
         <div class="section-header text-center mb-14">
-          <span class="section-badge inline-block bg-brand-gold/10 text-brand-gold-dark font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Nuestros Servicios</span>
-          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-navy-dark mb-4">Atención Integral para<br>el Cuidado de tu Salud</h2>
-          <p class="text-gray-500 max-w-xl mx-auto text-base">Contamos con profesionales especializados en cada área para brindarte el servicio completo que tú y tu familia merecen.</p>
+          <span class="section-badge inline-block bg-brand-green/10 text-brand-green font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Nuestros Tratamientos</span>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-blue-dark mb-4">Servicios Especializados<br>en Fisioterapia y Rehabilitación</h2>
+          <p class="text-gray-500 max-w-xl mx-auto text-base">Tratamos una amplia variedad de condiciones con técnicas modernas, evidencia científica y atención completamente personalizada.</p>
         </div>
 
         <div class="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <!-- Enfermeras y Cuidadoras -->
           <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-img relative overflow-hidden h-44">
-              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=80" alt="Enfermeras y cuidadoras a domicilio" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/80 via-brand-navy/20 to-transparent"></div>
-              <span class="absolute top-3 right-3 bg-white/90 text-brand-navy text-xs font-bold px-3 py-1 rounded-full shadow">Popular</span>
-              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
-                <i data-lucide="heart-handshake" class="w-5 h-5 text-white"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Enfermeras y Cuidadoras</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Personal certificado para el cuidado y acompañamiento de adultos mayores, enfermos y pacientes en recuperación. Servicio a domicilio las 24 horas.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Atención personalizada 24/7
-              </div>
-            </div>
-          </article>
-
-          <!-- Consulta Médica a Domicilio -->
-          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-img relative overflow-hidden h-44">
-              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80" alt="Consulta médica a domicilio" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/80 via-brand-navy/20 to-transparent"></div>
-              <span class="absolute top-3 right-3 bg-white/90 text-brand-gold-dark text-xs font-bold px-3 py-1 rounded-full shadow">A Domicilio</span>
-              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
-                <i data-lucide="stethoscope" class="w-5 h-5 text-white"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Consulta Médica a Domicilio</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Médicos generales y especialistas que acuden a tu hogar para valoración, diagnóstico y tratamiento. Sin filas, sin traslados complicados.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Médicos certificados y confiables
-              </div>
-            </div>
-          </article>
-
-          <!-- Oxígeno -->
-          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-img relative overflow-hidden h-44">
-              <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80" alt="Renta y venta de concentradores y tanques de oxígeno" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/80 via-brand-navy/20 to-transparent"></div>
-              <span class="absolute top-3 right-3 bg-white/90 text-brand-navy text-xs font-bold px-3 py-1 rounded-full shadow">Renta & Venta</span>
-              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
-                <i data-lucide="wind" class="w-5 h-5 text-white"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Concentradores y Tanques de Oxígeno</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Renta y venta de concentradores y tanques de oxígeno medicinal para pacientes con necesidades respiratorias. Entrega a domicilio inmediata.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Entrega rápida a domicilio
-              </div>
-            </div>
-          </article>
-
-          <!-- Nutriólogo -->
-          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-img relative overflow-hidden h-44">
-              <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Servicio de nutriólogo" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/80 via-brand-navy/20 to-transparent"></div>
-              <span class="absolute top-3 right-3 bg-white/90 text-brand-gold-dark text-xs font-bold px-3 py-1 rounded-full shadow">Especialista</span>
-              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
-                <i data-lucide="salad" class="w-5 h-5 text-white"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Nutriólogo</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Planes nutricionales personalizados para pacientes en recuperación, adultos mayores y personas con condiciones médicas específicas que requieren alimentación especializada.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Plan alimenticio personalizado
-              </div>
-            </div>
-          </article>
-
-          <!-- Psicología -->
-          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-img relative overflow-hidden h-44">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Servicios de psicología" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/80 via-brand-navy/20 to-transparent"></div>
-              <span class="absolute top-3 right-3 bg-white/90 text-brand-navy text-xs font-bold px-3 py-1 rounded-full shadow">Bienestar</span>
-              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
-                <i data-lucide="brain" class="w-5 h-5 text-white"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Psicología</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Apoyo psicológico profesional para pacientes y familiares. Atención a depresión, ansiedad, duelo, adaptación a enfermedades crónicas y bienestar emocional.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Acompañamiento emocional integral
-              </div>
-            </div>
-          </article>
-
-          <!-- Fisioterapia -->
-          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-img relative overflow-hidden h-44">
-              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="Fisioterapia a domicilio" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/80 via-brand-navy/20 to-transparent"></div>
-              <span class="absolute top-3 right-3 bg-white/90 text-brand-gold-dark text-xs font-bold px-3 py-1 rounded-full shadow">Rehabilitación</span>
-              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
-                <i data-lucide="activity" class="w-5 h-5 text-white"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Fisioterapía</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Rehabilitación física a domicilio para recuperar movilidad, tratar lesiones y mejorar la calidad de vida de pacientes post operados, adultos mayores y lesionados.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Recuperación en tu hogar
-              </div>
-            </div>
-          </article>
-
-          <!-- Laboratorios -->
-          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-header-gold p-6 flex items-center justify-between">
+            <div class="service-card-header bg-gradient-to-br from-brand-blue to-brand-blue-dark p-6 flex items-center justify-between">
               <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
-                <i data-lucide="microscope" class="w-7 h-7 text-white"></i>
+                <i data-lucide="bone" class="w-7 h-7 text-white"></i>
               </div>
-              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">A Domicilio</span>
+              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Popular</span>
             </div>
             <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Laboratorios y Rayos "X"</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Toma de muestras y estudios de laboratorio en casa. También contamos con servicio de rayos X portátil para diagnóstico sin necesidad de traslado.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
+              <h3 class="font-display font-bold text-lg text-brand-blue-dark mb-2">Traumatología y Ortopedia</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Rehabilitación especializada para fracturas, lesiones musculoesqueléticas y recuperación post traumática con planes individualizados.</p>
+              <div class="flex items-center gap-2 text-brand-green font-semibold text-sm">
                 <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Resultados rápidos y confiables
+                Evaluación y plan personalizado
               </div>
             </div>
           </article>
 
-          <!-- Ambulancia -->
           <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-header-navy p-6 flex items-center justify-between">
-              <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
-                <i data-lucide="truck" class="w-7 h-7 text-white"></i>
+            <div class="service-card-img relative overflow-hidden h-44">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Lesiones deportivas" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-green-dark/80 via-brand-green/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-white/90 text-brand-green-dark text-xs font-bold px-3 py-1 rounded-full shadow">Deportivo</span>
+              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
+                <i data-lucide="zap" class="w-5 h-5 text-white"></i>
               </div>
-              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Urgente</span>
             </div>
             <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Traslados en Ambulancia</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Servicio de traslado medicalizado para pacientes que requieren atención durante el transporte. Seguridad y equipamiento médico en todo momento.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
+              <h3 class="font-display font-bold text-lg text-brand-blue-dark mb-2">Lesiones Deportivas</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Tratamiento de tendonitis, fracturas, esguinces y desgarres musculares para que vuelvas a tu deporte más rápido y más fuerte.</p>
+              <div class="flex items-center gap-2 text-brand-green font-semibold text-sm">
                 <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Personal médico a bordo
+                Recuperación rápida y efectiva
               </div>
             </div>
           </article>
 
-          <!-- Servicios Funerarios -->
           <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-            <div class="service-card-header-dark p-6 flex items-center justify-between">
+            <div class="service-card-header bg-gradient-to-br from-brand-green to-brand-green-dark p-6 flex items-center justify-between">
               <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
-                <i data-lucide="flower-2" class="w-7 h-7 text-white"></i>
+                <i data-lucide="heart-pulse" class="w-7 h-7 text-white"></i>
               </div>
-              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Apoyo Integral</span>
+              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Especialidad</span>
             </div>
             <div class="p-6">
-              <h3 class="font-display font-bold text-lg text-brand-navy-dark mb-2">Servicios Funerarios</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Acompañamiento y orientación en los momentos más difíciles. Ofrecemos asesoría y conexión con servicios funerarios de confianza para tu tranquilidad.</p>
-              <div class="flex items-center gap-2 text-brand-gold-dark font-semibold text-sm">
+              <h3 class="font-display font-bold text-lg text-brand-blue-dark mb-2">Geriatría</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Terapia especializada para adultos mayores: mejora de movilidad, fuerza muscular, equilibrio y prevención de caídas con atención domiciliaria.</p>
+              <div class="flex items-center gap-2 text-brand-green font-semibold text-sm">
                 <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Apoyo con respeto y dignidad
+                Atención a domicilio disponible
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
+            <div class="service-card-header bg-gradient-to-br from-indigo-600 to-brand-blue p-6 flex items-center justify-between">
+              <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                <i data-lucide="brain" class="w-7 h-7 text-white"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-brand-blue-dark mb-2">Neurología</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Rehabilitación neurológica para pacientes con secuelas de EVC, Parkinson, esclerosis múltiple y otras condiciones del sistema nervioso.</p>
+              <div class="flex items-center gap-2 text-brand-green font-semibold text-sm">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                Protocolo especializado
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
+            <div class="service-card-header bg-gradient-to-br from-teal-600 to-brand-green-dark p-6 flex items-center justify-between">
+              <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                <i data-lucide="baby" class="w-7 h-7 text-white"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-brand-blue-dark mb-2">Pediatría y Reumatología</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Terapia física para niños con retrasos del desarrollo motor y tratamiento para pacientes con artritis, lupus y otras enfermedades reumáticas.</p>
+              <div class="flex items-center gap-2 text-brand-green font-semibold text-sm">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                Enfoque multidisciplinario
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
+            <div class="service-card-header bg-gradient-to-br from-[#8B1A4A] to-[#6B0F35] p-6 flex items-center justify-between">
+              <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                <i data-lucide="stethoscope" class="w-7 h-7 text-white"></i>
+              </div>
+              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Especialidad</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-brand-blue-dark mb-2">Dermatólogo</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Valoración y tratamiento de afecciones de la piel, uñas y cabello, con diagnóstico especializado para un cuidado dermatológico integral.</p>
+              <div class="flex items-center gap-2 text-brand-green font-semibold text-sm">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                Consulta especializada
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
+            <div class="service-card-img relative overflow-hidden h-44">
+              <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" alt="Masaje terapéutico y post operados" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-green-dark/80 via-brand-green/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-white/90 text-brand-green-dark text-xs font-bold px-3 py-1 rounded-full shadow">A Domicilio</span>
+              <div class="absolute bottom-3 left-3 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
+                <i data-lucide="hand" class="w-5 h-5 text-white"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-brand-blue-dark mb-2">Masaje Terapéutico y Post Operados</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Masoterapia para alivio del dolor muscular y rehabilitación post quirúrgica de fractura, prótesis, columna, hombro y rodilla.</p>
+              <div class="flex items-center gap-2 text-brand-green font-semibold text-sm">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                Recuperación completa garantizada
               </div>
             </div>
           </article>
 
         </div>
 
-        <!-- Banner CTA servicios -->
-        <div class="mt-10 bg-gradient-to-r from-brand-navy to-brand-navy-light rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6 shadow-xl">
+        <!-- Terapia a Domicilio Banner -->
+        <div class="mt-10 bg-gradient-to-r from-brand-blue to-brand-blue-light rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6 shadow-xl">
           <div class="w-16 h-16 min-w-[4rem] bg-white/20 rounded-2xl flex items-center justify-center">
             <i data-lucide="home" class="w-8 h-8 text-white"></i>
           </div>
           <div class="text-center sm:text-left flex-1">
-            <h3 class="font-display font-bold text-xl text-white mb-1">Todos nuestros servicios van hasta tu domicilio</h3>
-            <p class="text-white/80 text-sm">Comodidad, seguridad y atención profesional sin que tengas que salir de casa. CDMX y Zona Metropolitana.</p>
+            <h3 class="font-display font-bold text-xl text-white mb-1">Terapia Personalizada a Domicilio</h3>
+            <p class="text-white/80 text-sm">Llevamos la rehabilitación hasta tu hogar. Comodidad, seguridad y profesionalismo sin que tengas que salir de casa.</p>
           </div>
-          <a href="https://wa.me/5215540036237?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20servicio%20a%20domicilio" target="_blank"
-             class="whitespace-nowrap flex items-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-white font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-sm">
+          <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20interesa%20la%20terapia%20a%20domicilio" target="_blank"
+             class="whitespace-nowrap flex items-center gap-2 bg-white text-brand-blue font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-sm">
             <i data-lucide="message-circle" class="w-4 h-4"></i>
-            Solicitar Ahora
+            Solicitar Visita
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- MEDICINA ESTÉTICA Y BIENESTAR                               -->
+    <!-- ============================================================ -->
+    <section id="estetica" class="py-20 bg-white overflow-hidden">
+      <div class="container mx-auto px-4">
+
+        <div class="section-header text-center mb-14">
+          <span class="section-badge inline-block bg-[#8B1A4A]/10 text-[#8B1A4A] font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Medicina Estética</span>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-blue-dark mb-4">Tratamientos Estéticos<br>y Corporales</h2>
+          <p class="text-gray-500 max-w-xl mx-auto text-base">Procedimientos estéticos avanzados con tecnología de punta para tu rejuvenecimiento facial y remodelación corporal.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Radiofrecuencia Facial -->
+          <article class="estetica-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-[#c9a98a]/20">
+            <div class="relative overflow-hidden h-48 bg-gradient-to-br from-[#8B1A4A] to-[#6B0F35] flex items-center justify-between p-6">
+              <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                <i data-lucide="zap" class="w-7 h-7 text-white"></i>
+              </div>
+              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full self-start">Facial</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-[#6B0F35] mb-2">Radiofrecuencia Facial</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Estimulación de colágeno para reafirmar y rejuvenecer la piel del rostro, cuello y escote con resultados visibles desde la primera sesión.</p>
+              <div class="space-y-1.5 mb-4">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-500">Costo por sesión</span>
+                  <span class="font-bold text-[#8B1A4A]">$250.00</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-500">Paquete 10 sesiones</span>
+                  <span class="font-bold text-[#8B1A4A]">$2,000.00</span>
+                </div>
+              </div>
+              <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20interesa%20la%20Radiofrecuencia%20Facial" target="_blank"
+                 class="flex items-center justify-center gap-2 bg-[#8B1A4A] hover:bg-[#6B0F35] text-white font-semibold text-sm py-2.5 rounded-xl transition-all duration-300">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                Más información
+              </a>
+            </div>
+          </article>
+
+          <!-- Carboxiterapia Facial -->
+          <article class="estetica-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-[#c9a98a]/20">
+            <div class="relative overflow-hidden h-48">
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80" alt="Carboxiterapia facial" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#6B0F35]/80 via-[#8B1A4A]/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-white/90 text-[#8B1A4A] text-xs font-bold px-3 py-1 rounded-full shadow">Facial</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-[#6B0F35] mb-2">Carboxiterapia Facial</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Microinyecciones de CO₂ medicinal que oxigenan los tejidos, reducen ojeras, manchas y mejoran la textura de la piel de forma progresiva.</p>
+              <div class="space-y-1.5 mb-4">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-500">Costo por sesión</span>
+                  <span class="font-bold text-[#8B1A4A]">$250.00</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-500">Paquete 10 sesiones</span>
+                  <span class="font-bold text-[#8B1A4A]">$2,000.00</span>
+                </div>
+              </div>
+              <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20interesa%20la%20Carboxiterapia%20Facial" target="_blank"
+                 class="flex items-center justify-center gap-2 bg-[#8B1A4A] hover:bg-[#6B0F35] text-white font-semibold text-sm py-2.5 rounded-xl transition-all duration-300">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                Más información
+              </a>
+            </div>
+          </article>
+
+          <!-- Relleno Ácido Hialurónico -->
+          <article class="estetica-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-[#c9a98a]/20">
+            <div class="relative overflow-hidden h-48 bg-gradient-to-br from-[#8B1A4A] to-[#6B0F35] flex items-center justify-between p-6">
+              <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                <i data-lucide="syringe" class="w-7 h-7 text-white"></i>
+              </div>
+              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full self-start">Premium</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-[#6B0F35] mb-2">Relleno Facial Ácido Hialurónico</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-2">Tratamiento de surcos nasogenianos, línea de marioneta, surcos interciliares y arrugas finas con resultados inmediatos y naturales.</p>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="bg-[#8B1A4A]/8 text-[#8B1A4A] text-xs px-2 py-0.5 rounded-full">Surcos nasogenianos</span>
+                <span class="bg-[#8B1A4A]/8 text-[#8B1A4A] text-xs px-2 py-0.5 rounded-full">Línea marioneta</span>
+                <span class="bg-[#8B1A4A]/8 text-[#8B1A4A] text-xs px-2 py-0.5 rounded-full">Arrugas finas</span>
+              </div>
+              <div class="space-y-1.5 mb-4">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-500">Desde</span>
+                  <span class="font-bold text-[#8B1A4A]">$5,000.00</span>
+                </div>
+              </div>
+              <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20interesa%20el%20Relleno%20Facial%20con%20%C3%81cido%20Hialur%C3%B3nico" target="_blank"
+                 class="flex items-center justify-center gap-2 bg-[#8B1A4A] hover:bg-[#6B0F35] text-white font-semibold text-sm py-2.5 rounded-xl transition-all duration-300">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                Más información
+              </a>
+            </div>
+          </article>
+
+          <!-- Radiofrecuencia Corporal -->
+          <article class="estetica-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-[#c9a98a]/20">
+            <div class="relative overflow-hidden h-48">
+              <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600&q=80" alt="Radiofrecuencia corporal" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#6B0F35]/80 via-[#8B1A4A]/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-white/90 text-[#8B1A4A] text-xs font-bold px-3 py-1 rounded-full shadow">Corporal</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-lg text-[#6B0F35] mb-2">Radiofrecuencia Corporal</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-4">Reafirmación y remodelación corporal con energía de radiofrecuencia que calienta los tejidos profundos estimulando colágeno y reduciendo grasa localizada.</p>
+              <div class="space-y-1.5 mb-4">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-500">Costo por sesión</span>
+                  <span class="font-bold text-[#8B1A4A]">$250.00</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-500">Paquete 10 sesiones</span>
+                  <span class="font-bold text-[#8B1A4A]">$2,000.00</span>
+                </div>
+              </div>
+              <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20interesa%20la%20Radiofrecuencia%20Corporal" target="_blank"
+                 class="flex items-center justify-center gap-2 bg-[#8B1A4A] hover:bg-[#6B0F35] text-white font-semibold text-sm py-2.5 rounded-xl transition-all duration-300">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                Más información
+              </a>
+            </div>
+          </article>
+
+          <!-- Paquete Reductivo -->
+          <article class="estetica-card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-[#c9a98a]/20 sm:col-span-2 lg:col-span-2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 h-full">
+              <div class="relative overflow-hidden h-48 sm:h-full bg-gradient-to-br from-[#8B1A4A] to-[#6B0F35] flex items-center justify-center p-6">
+                <i data-lucide="flame" class="w-16 h-16 text-white/90"></i>
+                <span class="absolute top-3 right-3 bg-white/90 text-[#8B1A4A] text-xs font-bold px-3 py-1 rounded-full shadow">Más Completo</span>
+              </div>
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="font-display font-bold text-xl text-[#6B0F35] mb-2">Paquete Reductivo</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-4">Combinación de técnicas para reducción de medidas: cavitación, radiofrecuencia y electroestimulación. Incluye rutina de ejercicios personalizada para maximizar resultados.</p>
+                <div class="flex items-center gap-2 text-sm mb-1.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-[#8B1A4A]"></i>
+                  <span class="text-gray-500">Incluye rutina de ejercicios</span>
+                </div>
+                <div class="space-y-1.5 mb-5">
+                  <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500">Costo por sesión</span>
+                    <span class="font-bold text-[#8B1A4A]">$600.00</span>
+                  </div>
+                  <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500">Paquete 10 sesiones</span>
+                    <span class="font-bold text-[#8B1A4A]">$4,500.00</span>
+                  </div>
+                </div>
+                <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20interesa%20el%20Paquete%20Reductivo" target="_blank"
+                   class="flex items-center justify-center gap-2 bg-[#8B1A4A] hover:bg-[#6B0F35] text-white font-semibold text-sm py-2.5 rounded-xl transition-all duration-300">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  Más información
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Banner estético -->
+        <div class="mt-10 rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6 shadow-xl" style="background: linear-gradient(135deg, #8B1A4A 0%, #6B0F35 100%);">
+          <div class="w-16 h-16 min-w-[4rem] bg-white/20 rounded-2xl flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-8 h-8 text-white"></i>
+          </div>
+          <div class="text-center sm:text-left flex-1">
+            <h3 class="font-display font-bold text-xl text-white mb-1">¿Dudas sobre qué tratamiento es para ti?</h3>
+            <p class="text-white/80 text-sm">Agenda una valoración gratuita y te recomendamos el protocolo ideal para tus objetivos estéticos y corporales.</p>
+          </div>
+          <a href="https://wa.me/5215535226093?text=Hola%2C%20quisiera%20una%20valoraci%C3%B3n%20para%20tratamientos%20est%C3%A9ticos" target="_blank"
+             class="whitespace-nowrap flex items-center gap-2 bg-white text-[#8B1A4A] font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-sm">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Solicitar Valoración
           </a>
         </div>
 
@@ -521,70 +664,70 @@
       <div class="container mx-auto px-4">
 
         <div class="section-header text-center mb-14">
-          <span class="section-badge inline-block bg-brand-navy/10 text-brand-navy font-semibold text-sm px-4 py-1.5 rounded-full mb-4">¿Por qué elegirnos?</span>
-          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-navy-dark mb-4">Tu Familia Merece la Mejor<br>Atención Médica en Casa</h2>
-          <p class="text-gray-500 max-w-xl mx-auto">Nos comprometemos con el bienestar de tus seres queridos con profesionalismo, calidez humana y resultados reales.</p>
+          <span class="section-badge inline-block bg-brand-blue/10 text-brand-blue font-semibold text-sm px-4 py-1.5 rounded-full mb-4">¿Por qué elegirnos?</span>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-blue-dark mb-4">Tu Recuperación en las Mejores<br>Manos Especializadas</h2>
+          <p class="text-gray-500 max-w-xl mx-auto">Nos comprometemos con tu bienestar desde el primer momento con atención de calidad, calidez humana y resultados reales.</p>
         </div>
 
         <div class="benefits-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <div class="benefit-item flex gap-4">
-            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-gold/10 rounded-2xl flex items-center justify-center">
-              <i data-lucide="shield-check" class="w-7 h-7 text-brand-gold"></i>
+            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-green/10 rounded-2xl flex items-center justify-center">
+              <i data-lucide="shield-check" class="w-7 h-7 text-brand-green"></i>
             </div>
             <div>
-              <h3 class="font-display font-bold text-brand-navy-dark mb-1">Personal Certificado</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Todo nuestro equipo cuenta con certificaciones profesionales, experiencia comprobada y un compromiso genuino con la salud de tus seres queridos.</p>
+              <h3 class="font-display font-bold text-brand-blue-dark mb-1">Calidad Certificada</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Lic. en Terapia Física con formación certificada, técnicas basadas en evidencia científica y protocolos clínicos de excelencia.</p>
             </div>
           </div>
 
           <div class="benefit-item flex gap-4">
-            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-navy/10 rounded-2xl flex items-center justify-center">
-              <i data-lucide="home" class="w-7 h-7 text-brand-navy"></i>
+            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-blue/10 rounded-2xl flex items-center justify-center">
+              <i data-lucide="user-check" class="w-7 h-7 text-brand-blue"></i>
             </div>
             <div>
-              <h3 class="font-display font-bold text-brand-navy-dark mb-1">Atención a Domicilio</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Llevamos todos nuestros servicios hasta la comodidad de tu hogar. Ideal para adultos mayores, pacientes postoperados y personas con movilidad reducida.</p>
+              <h3 class="font-display font-bold text-brand-blue-dark mb-1">Atención Personalizada</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Cada paciente recibe un plan de tratamiento único diseñado según su condición, objetivos y ritmo de recuperación.</p>
             </div>
           </div>
 
           <div class="benefit-item flex gap-4">
-            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-gold/10 rounded-2xl flex items-center justify-center">
-              <i data-lucide="clock" class="w-7 h-7 text-brand-gold"></i>
+            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-green/10 rounded-2xl flex items-center justify-center">
+              <i data-lucide="home" class="w-7 h-7 text-brand-green"></i>
             </div>
             <div>
-              <h3 class="font-display font-bold text-brand-navy-dark mb-1">Disponibilidad 24/7</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">La salud no tiene horario. Contamos con personal disponible las 24 horas del día, los 7 días de la semana para atender cualquier necesidad urgente.</p>
+              <h3 class="font-display font-bold text-brand-blue-dark mb-1">Terapia a Domicilio</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Llevamos la rehabilitación hasta tu hogar. Ideal para adultos mayores, post operados o quienes no pueden desplazarse.</p>
             </div>
           </div>
 
           <div class="benefit-item flex gap-4">
-            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-navy/10 rounded-2xl flex items-center justify-center">
-              <i data-lucide="users" class="w-7 h-7 text-brand-navy"></i>
+            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-blue/10 rounded-2xl flex items-center justify-center">
+              <i data-lucide="clock" class="w-7 h-7 text-brand-blue"></i>
             </div>
             <div>
-              <h3 class="font-display font-bold text-brand-navy-dark mb-1">Servicio Multidisciplinario</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Médicos, enfermeras, nutriólogos, psicólogos y fisioterapeutas trabajando coordinadamente para brindarte una atención de salud verdaderamente integral.</p>
+              <h3 class="font-display font-bold text-brand-blue-dark mb-1">Horarios Flexibles</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Agenda tu cita en el horario que mejor te funcione, sin largas esperas. Nos adaptamos a tu disponibilidad.</p>
             </div>
           </div>
 
           <div class="benefit-item flex gap-4">
-            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-gold/10 rounded-2xl flex items-center justify-center">
-              <i data-lucide="heart" class="w-7 h-7 text-brand-gold"></i>
+            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-green/10 rounded-2xl flex items-center justify-center">
+              <i data-lucide="award" class="w-7 h-7 text-brand-green"></i>
             </div>
             <div>
-              <h3 class="font-display font-bold text-brand-navy-dark mb-1">Calidez Humana</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Entendemos que cuidar a un familiar es una responsabilidad enorme. Por eso, nuestro equipo actúa con empatía, respeto y dedicación en cada visita.</p>
+              <h3 class="font-display font-bold text-brand-blue-dark mb-1">Amplia Experiencia</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Más de 500 pacientes recuperados en diversas especialidades: traumatología, neurología, pediatría, reumatología y más.</p>
             </div>
           </div>
 
           <div class="benefit-item flex gap-4">
-            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-navy/10 rounded-2xl flex items-center justify-center">
-              <i data-lucide="phone" class="w-7 h-7 text-brand-navy"></i>
+            <div class="benefit-icon w-14 h-14 min-w-[3.5rem] bg-brand-blue/10 rounded-2xl flex items-center justify-center">
+              <i data-lucide="heart-handshake" class="w-7 h-7 text-brand-blue"></i>
             </div>
             <div>
-              <h3 class="font-display font-bold text-brand-navy-dark mb-1">Seguimiento Continuo</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">Te mantenemos informado en todo momento sobre la evolución del paciente. Comunicación constante y reportes claros sobre el estado de salud de tu familiar.</p>
+              <h3 class="font-display font-bold text-brand-blue-dark mb-1">Seguimiento Continuo</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Te acompañamos en cada etapa de tu recuperación con orientación, seguimiento por WhatsApp y ajustes al tratamiento.</p>
             </div>
           </div>
 
@@ -599,48 +742,48 @@
       <div class="container mx-auto px-4">
 
         <div class="section-header text-center mb-14">
-          <span class="section-badge inline-block bg-brand-gold/10 text-brand-gold-dark font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Información de Atención</span>
-          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-navy-dark mb-4">Estamos Disponibles para Ti</h2>
-          <p class="text-gray-500 max-w-xl mx-auto">Conoce cómo funciona nuestro servicio, horarios y formas de contacto para atender tu caso de manera rápida y eficiente.</p>
+          <span class="section-badge inline-block bg-brand-green/10 text-brand-green font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Información de Atención</span>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-blue-dark mb-4">Estamos Aquí para Ti</h2>
+          <p class="text-gray-500 max-w-xl mx-auto">Conoce nuestros horarios, modalidades de atención y cómo funciona nuestro proceso de citas.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           <div class="info-card bg-white rounded-2xl p-7 shadow-md">
-            <div class="w-12 h-12 bg-brand-navy/10 rounded-xl flex items-center justify-center mb-4">
-              <i data-lucide="clock-3" class="w-6 h-6 text-brand-navy"></i>
+            <div class="w-12 h-12 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="clock-3" class="w-6 h-6 text-brand-blue"></i>
             </div>
-            <h3 class="font-display font-bold text-brand-navy-dark text-lg mb-3">Horarios de Atención</h3>
+            <h3 class="font-display font-bold text-brand-blue-dark text-lg mb-3">Horarios de Atención</h3>
             <ul class="space-y-2 text-sm text-gray-500">
-              <li class="flex justify-between"><span>Lunes – Viernes</span><span class="font-medium text-brand-navy-dark">8:00 – 20:00</span></li>
-              <li class="flex justify-between"><span>Sábado</span><span class="font-medium text-brand-navy-dark">9:00 – 18:00</span></li>
-              <li class="flex justify-between"><span>Domingo y Urgencias</span><span class="font-medium text-brand-gold">Cita previa</span></li>
+              <li class="flex justify-between"><span>Lunes – Viernes</span><span class="font-medium text-brand-blue-dark">7:00 – 19:00</span></li>
+              <li class="flex justify-between"><span>Sábado</span><span class="font-medium text-brand-blue-dark">7:00 – 14:00</span></li>
+              <li class="flex justify-between"><span>Domingo</span><span class="font-medium text-gray-400">Previa cita</span></li>
             </ul>
           </div>
 
           <div class="info-card bg-white rounded-2xl p-7 shadow-md">
-            <div class="w-12 h-12 bg-brand-gold/10 rounded-xl flex items-center justify-center mb-4">
-              <i data-lucide="map-pin" class="w-6 h-6 text-brand-gold"></i>
+            <div class="w-12 h-12 bg-brand-green/10 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="stethoscope" class="w-6 h-6 text-brand-green"></i>
             </div>
-            <h3 class="font-display font-bold text-brand-navy-dark text-lg mb-3">Cobertura</h3>
+            <h3 class="font-display font-bold text-brand-blue-dark text-lg mb-3">Modalidades de Atención</h3>
             <ul class="space-y-2 text-sm text-gray-500">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Ciudad de México (CDMX)</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Zona Metropolitana</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Estado de México</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Consultar otras zonas</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Consulta presencial en clínica</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Terapia personalizada a domicilio</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Seguimiento por WhatsApp</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Atención a adultos mayores</li>
             </ul>
           </div>
 
           <div class="info-card bg-white rounded-2xl p-7 shadow-md">
-            <div class="w-12 h-12 bg-brand-navy/10 rounded-xl flex items-center justify-center mb-4">
-              <i data-lucide="credit-card" class="w-6 h-6 text-brand-navy"></i>
+            <div class="w-12 h-12 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="credit-card" class="w-6 h-6 text-brand-blue"></i>
             </div>
-            <h3 class="font-display font-bold text-brand-navy-dark text-lg mb-3">Formas de Pago</h3>
+            <h3 class="font-display font-bold text-brand-blue-dark text-lg mb-3">Formas de Pago</h3>
             <ul class="space-y-2 text-sm text-gray-500">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Efectivo</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Transferencia bancaria</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Tarjeta débito / crédito</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Precios accesibles</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Efectivo</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Transferencia bancaria</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Tarjeta débito / crédito</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Precios accesibles</li>
             </ul>
           </div>
 
@@ -655,35 +798,35 @@
       <div class="container mx-auto px-4">
 
         <div class="section-header text-center mb-14">
-          <span class="section-badge inline-block bg-brand-navy/10 text-brand-navy font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Así de Fácil</span>
-          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-navy-dark mb-4">Atención en 4 Simples Pasos</h2>
-          <p class="text-gray-500 max-w-xl mx-auto">Solicita nuestros servicios de forma rápida y sin complicaciones. Tu familiar estará en buenas manos.</p>
+          <span class="section-badge inline-block bg-brand-blue/10 text-brand-blue font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Así de Fácil</span>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-blue-dark mb-4">Tu Cita en 4 Simples Pasos</h2>
+          <p class="text-gray-500 max-w-xl mx-auto">Agenda tu consulta de forma rápida y sin complicaciones. Empieza tu recuperación hoy.</p>
         </div>
 
         <div class="process-steps grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           <div class="process-step text-center">
-            <div class="step-number w-16 h-16 text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg step-gold">1</div>
-            <h3 class="font-display font-bold text-brand-navy-dark mb-2">Contáctanos</h3>
-            <p class="text-gray-500 text-sm">Escríbenos por WhatsApp o llámanos al 55 4003 6237</p>
+            <div class="step-number w-16 h-16 bg-brand-green text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-brand-green/30">1</div>
+            <h3 class="font-display font-bold text-brand-blue-dark mb-2">Contacta</h3>
+            <p class="text-gray-500 text-sm">Escríbenos por WhatsApp o llámanos al 55 3522 6093</p>
           </div>
 
           <div class="process-step text-center">
-            <div class="step-number w-16 h-16 text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg step-navy">2</div>
-            <h3 class="font-display font-bold text-brand-navy-dark mb-2">Cuéntanos</h3>
-            <p class="text-gray-500 text-sm">Nos indicas el servicio que necesitas y la situación del paciente</p>
+            <div class="step-number w-16 h-16 bg-brand-blue text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-brand-blue/30">2</div>
+            <h3 class="font-display font-bold text-brand-blue-dark mb-2">Agenda</h3>
+            <p class="text-gray-500 text-sm">Seleccionamos el día y hora que mejor se adapte a tu rutina</p>
           </div>
 
           <div class="process-step text-center">
-            <div class="step-number w-16 h-16 text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg step-gold">3</div>
-            <h3 class="font-display font-bold text-brand-navy-dark mb-2">Agendamos</h3>
-            <p class="text-gray-500 text-sm">Coordinamos fecha, hora y asignamos al profesional ideal para tu caso</p>
+            <div class="step-number w-16 h-16 bg-brand-green text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-brand-green/30">3</div>
+            <h3 class="font-display font-bold text-brand-blue-dark mb-2">Evaluación</h3>
+            <p class="text-gray-500 text-sm">Valoración completa y diseño de tu plan de rehabilitación</p>
           </div>
 
           <div class="process-step text-center">
-            <div class="step-number w-16 h-16 text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg step-navy">4</div>
-            <h3 class="font-display font-bold text-brand-navy-dark mb-2">Atención</h3>
-            <p class="text-gray-500 text-sm">Nuestro profesional llega a tu domicilio con puntualidad y equipo completo</p>
+            <div class="step-number w-16 h-16 bg-brand-blue text-white font-black text-2xl font-display rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-brand-blue/30">4</div>
+            <h3 class="font-display font-bold text-brand-blue-dark mb-2">Recuperación</h3>
+            <p class="text-gray-500 text-sm">Sesiones de terapia con seguimiento hasta tu recuperación total</p>
           </div>
 
         </div>
@@ -696,21 +839,15 @@
     <section class="cta-banner relative overflow-hidden">
       <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
 
-        <div class="cta-img-side relative overflow-hidden order-2 lg:order-1">
-          <img
-            src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=800&q=80"
-            alt="Cuidadora de Servicios de Luna con adulto mayor"
-            class="w-full h-64 lg:h-full object-cover object-center"
-            loading="lazy"
-          />
-          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-brand-navy-dark/20 lg:to-brand-navy-dark/60"></div>
+        <div class="cta-img-side relative overflow-hidden order-2 lg:order-1 bg-gradient-to-br from-brand-green to-brand-blue-dark flex items-center justify-center h-64 lg:h-full">
+          <i data-lucide="activity" class="w-28 h-28 lg:w-36 lg:h-36 text-white/90"></i>
           <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-xl flex items-center gap-3">
-            <div class="w-10 h-10 bg-brand-gold/15 rounded-xl flex items-center justify-center">
-              <i data-lucide="shield-check" class="w-5 h-5 text-brand-gold"></i>
+            <div class="w-10 h-10 bg-brand-green/15 rounded-xl flex items-center justify-center">
+              <i data-lucide="shield-check" class="w-5 h-5 text-brand-green"></i>
             </div>
             <div>
               <div class="text-xs text-gray-500 font-medium">Personal Certificado</div>
-              <div class="font-bold text-brand-navy-dark text-sm">Servicios de Luna</div>
+              <div class="font-bold text-brand-blue-dark text-sm">EMERA</div>
             </div>
           </div>
         </div>
@@ -719,25 +856,25 @@
           <div class="cta-banner-content relative z-10 px-8 md:px-12 py-14 lg:py-20">
             <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur text-white text-xs font-semibold px-4 py-2 rounded-full mb-6 border border-white/30">
               <i data-lucide="star" class="w-3.5 h-3.5 fill-white"></i>
-              +1000 familias confían en nosotros
+              +500 pacientes recuperados nos recomiendan
             </div>
             <h2 class="font-display font-black text-3xl md:text-4xl xl:text-5xl text-white mb-4 leading-tight">
-              ¿Tu familiar necesita<br>atención médica en casa?
-              <span class="block text-gold-light">Nosotros vamos a ti.</span>
+              ¿Tienes dolor o limitación<br>de movimiento?
+              <span class="block text-brand-green-light">No lo dejes pasar más.</span>
             </h2>
             <p class="text-white/80 text-base md:text-lg mb-8 leading-relaxed max-w-md">
-              No dejes pasar más tiempo. Nuestro equipo de profesionales está listo para brindarte la atención que tu familia necesita, en la comodidad de su hogar.
+              La mayoría de lesiones y condiciones tienen solución cuando se atienden a tiempo. Nuestra especialista está lista para ayudarte hoy mismo.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/5215540036237?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20m%C3%A9dica%20a%20domicilio" target="_blank"
-                 class="flex items-center justify-center gap-2.5 bg-brand-gold hover:bg-brand-gold-dark text-white font-bold px-7 py-4 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-sm">
+              <a href="https://wa.me/5215535226093?text=Hola%2C%20quiero%20agendar%20una%20cita%20de%20fisioterapia" target="_blank"
+                 class="flex items-center justify-center gap-2.5 bg-white text-brand-blue font-bold px-7 py-4 rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-sm">
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
                 Escribir por WhatsApp
               </a>
-              <a href="tel:5540036237"
+              <a href="tel:5535226093"
                  class="flex items-center justify-center gap-2.5 border-2 border-white/50 text-white font-semibold px-7 py-4 rounded-full hover:bg-white/10 transition-all duration-300 text-sm">
                 <i data-lucide="phone" class="w-5 h-5"></i>
-                55 4003 6237
+                55 3522 6093
               </a>
             </div>
           </div>
@@ -753,56 +890,57 @@
       <div class="container mx-auto px-4">
 
         <div class="section-header text-center mb-14">
-          <span class="section-badge inline-block bg-brand-gold/10 text-brand-gold-dark font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Contáctanos</span>
-          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-navy-dark mb-4">Solicita tu Servicio Hoy</h2>
-          <p class="text-gray-500 max-w-xl mx-auto">Escríbenos o llámanos. Atendemos en CDMX y Zona Metropolitana con personal disponible para tu caso.</p>
+          <span class="section-badge inline-block bg-brand-green/10 text-brand-green font-semibold text-sm px-4 py-1.5 rounded-full mb-4">Contáctanos</span>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-brand-blue-dark mb-4">Agenda tu Cita Hoy</h2>
+          <p class="text-gray-500 max-w-xl mx-auto">Escríbenos o llámanos. Visítanos en clínica o solicita atención a domicilio en CDMX.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
           <div class="bg-white rounded-3xl p-8 shadow-lg">
-            <h3 class="font-display font-bold text-xl text-brand-navy-dark mb-6">Envíanos un Mensaje</h3>
+            <h3 class="font-display font-bold text-xl text-brand-blue-dark mb-6">Envíanos un Mensaje</h3>
             <form class="space-y-4" onsubmit="handleForm(event)">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-1.5">Nombre completo</label>
                   <input type="text" placeholder="Tu nombre" required
-                    class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold/30 focus:border-brand-gold transition-all" />
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green transition-all" />
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-1.5">Teléfono</label>
                   <input type="tel" placeholder="55 1234 5678" required
-                    class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold/30 focus:border-brand-gold transition-all" />
+                    class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green transition-all" />
                 </div>
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1.5">Correo electrónico</label>
                 <input type="email" placeholder="tu@email.com"
-                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold/30 focus:border-brand-gold transition-all" />
+                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green transition-all" />
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1.5">¿Qué servicio necesitas?</label>
-                <select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-gold/30 focus:border-brand-gold transition-all">
+                <label class="block text-sm font-medium text-gray-700 mb-1.5">¿En qué podemos ayudarte?</label>
+                <select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green transition-all">
                   <option value="">Selecciona un servicio</option>
-                  <option>Enfermeras y Cuidadoras a Domicilio</option>
-                  <option>Consulta Médica a Domicilio</option>
-                  <option>Renta / Venta de Oxígeno</option>
-                  <option>Nutriólogo</option>
-                  <option>Psicología</option>
-                  <option>Fisioterapia</option>
-                  <option>Laboratorios y Rayos X</option>
-                  <option>Traslado en Ambulancia</option>
-                  <option>Servicios Funerarios</option>
+                  <option>Traumatología y Ortopedia</option>
+                  <option>Lesiones Deportivas</option>
+                  <option>Geriatría</option>
+                  <option>Neurología</option>
+                  <option>Pediatría</option>
+                  <option>Reumatología</option>
+                  <option>Masaje Terapéutico</option>
+                  <option>Post Operados</option>
+                  <option>Dermatólogo</option>
+                  <option>Terapia a Domicilio</option>
                   <option>Otro</option>
                 </select>
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1.5">Mensaje (opcional)</label>
-                <textarea rows="3" placeholder="Cuéntanos sobre la situación del paciente o el servicio que necesitas..."
-                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold/30 focus:border-brand-gold transition-all resize-none"></textarea>
+                <textarea rows="3" placeholder="Cuéntanos más sobre tu condición o lesión..."
+                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/30 focus:border-brand-green transition-all resize-none"></textarea>
               </div>
               <button type="submit"
-                class="w-full btn-gold text-white font-bold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                class="w-full bg-brand-green hover:bg-brand-green-dark text-white font-bold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                 <i data-lucide="send" class="w-4 h-4"></i>
                 Enviar Mensaje
               </button>
@@ -812,66 +950,50 @@
           <div class="flex flex-col gap-6">
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="https://wa.me/5215540036237" target="_blank"
+              <a href="https://wa.me/5215535226093" target="_blank"
                  class="bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all group flex items-center gap-4">
-                <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center group-hover:bg-green-500 transition-colors">
-                  <i data-lucide="message-circle" class="w-6 h-6 text-green-500 group-hover:text-white transition-colors"></i>
+                <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center group-hover:bg-brand-green transition-colors">
+                  <i data-lucide="message-circle" class="w-6 h-6 text-brand-green group-hover:text-white transition-colors"></i>
                 </div>
                 <div>
                   <div class="text-xs text-gray-400 font-medium mb-0.5">WhatsApp</div>
-                  <div class="font-bold text-brand-navy-dark text-sm">55 4003 6237</div>
+                  <div class="font-bold text-brand-blue-dark text-sm">55 3522 6093</div>
                 </div>
               </a>
 
-              <a href="tel:5540036237"
+              <a href="tel:5535226093"
                  class="bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all group flex items-center gap-4">
-                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center group-hover:bg-brand-navy transition-colors">
-                  <i data-lucide="phone" class="w-6 h-6 text-brand-navy group-hover:text-white transition-colors"></i>
+                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center group-hover:bg-brand-blue transition-colors">
+                  <i data-lucide="phone" class="w-6 h-6 text-brand-blue group-hover:text-white transition-colors"></i>
                 </div>
                 <div>
                   <div class="text-xs text-gray-400 font-medium mb-0.5">Teléfono</div>
-                  <div class="font-bold text-brand-navy-dark text-sm">55 4003 6237</div>
+                  <div class="font-bold text-brand-blue-dark text-sm">55 3522 6093</div>
                 </div>
               </a>
 
               <div class="bg-white rounded-2xl p-5 shadow-md flex items-center gap-4 sm:col-span-2">
-                <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center">
-                  <i data-lucide="map-pin" class="w-6 h-6 text-brand-gold"></i>
+                <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center">
+                  <i data-lucide="map-pin" class="w-6 h-6 text-red-500"></i>
                 </div>
                 <div>
-                  <div class="text-xs text-gray-400 font-medium mb-0.5">Cobertura</div>
-                  <div class="font-bold text-brand-navy-dark text-sm">CDMX y Zona Metropolitana · Atención a domicilio</div>
-                </div>
-              </div>
-
-              <!-- Redes sociales -->
-              <div class="bg-white rounded-2xl p-5 shadow-md sm:col-span-2">
-                <div class="text-xs text-gray-400 font-medium mb-3">Síguenos en redes sociales</div>
-                <div class="flex items-center gap-3">
-                  <a href="https://web.facebook.com/serviiciosdeluna?rdid=U7WSwWrqJfDtUIpg&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1Dzzbb2FLm%2F%3F_rdc%3D1%26_rdr#" target="_blank" rel="noopener"
-                     class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform" aria-label="Facebook de Servicios de Luna">
-                    <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
-                  </a>
-                  <a href="https://www.instagram.com/serviciosdeluna/" target="_blank" rel="noopener"
-                     class="w-10 h-10 social-instagram-bg rounded-xl flex items-center justify-center hover:scale-110 transition-transform" aria-label="Instagram de Servicios de Luna">
-                    <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
-                  </a>
-                  <span class="text-xs text-gray-400 ml-1">@serviciosdeluna</span>
+                  <div class="text-xs text-gray-400 font-medium mb-0.5">Dirección</div>
+                  <div class="font-bold text-brand-blue-dark text-sm">Av. Montevideo 303, Col. Lindavista, GAM</div>
                 </div>
               </div>
             </div>
 
-            <div class="rounded-2xl overflow-hidden shadow-lg flex-1 flex items-center justify-center bg-gradient-to-br from-brand-navy to-brand-navy-light" style="min-height: 200px;">
+            <div class="rounded-2xl overflow-hidden shadow-lg flex-1 bg-gradient-to-br from-brand-blue to-brand-blue-dark flex items-center justify-center" style="min-height: 260px;">
               <div class="text-center px-8 py-10">
                 <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <i data-lucide="heart" class="w-8 h-8 text-brand-gold-light"></i>
+                  <i data-lucide="home" class="w-8 h-8 text-white"></i>
                 </div>
-                <h4 class="font-display font-bold text-white text-xl mb-2">Cuidamos a quien más quieres</h4>
-                <p class="text-white/75 text-sm mb-5 max-w-xs mx-auto">Llámanos o escríbenos ahora mismo. Nuestro equipo está listo para orientarte y asignarte el profesional ideal.</p>
-                <a href="https://wa.me/5215540036237?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20atenci%C3%B3n%20m%C3%A9dica" target="_blank"
-                   class="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-white font-bold px-6 py-3 rounded-full text-sm shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                <h4 class="font-display font-bold text-white text-xl mb-2">Terapia a Domicilio</h4>
+                <p class="text-white/75 text-sm mb-5 max-w-xs mx-auto">Cubrimos CDMX. Agenda tu visita y recupérate desde la comodidad de tu hogar.</p>
+                <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20terapia%20a%20domicilio" target="_blank"
+                   class="inline-flex items-center gap-2 bg-white text-brand-blue font-bold px-6 py-3 rounded-full text-sm shadow-lg hover:-translate-y-0.5 transition-all duration-300">
                   <i data-lucide="message-circle" class="w-4 h-4"></i>
-                  Solicitar Servicio
+                  Solicitar Visita
                 </a>
               </div>
             </div>
@@ -886,39 +1008,36 @@
   <!-- ============================================================ -->
   <!-- FOOTER                                                       -->
   <!-- ============================================================ -->
-  <footer class="bg-brand-navy-dark text-white py-12">
+  <footer class="bg-brand-blue-dark text-white py-12">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 
         <div>
-          <div class="flex items-center gap-3 mb-4">
-            <svg class="w-12 h-12 drop-shadow" viewBox="0 0 80 80"><use href="#logo-moon-lamp"/></svg>
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-10 h-10" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="18" r="8" fill="#66BB6A"/>
+              <rect x="33" y="28" width="14" height="18" rx="4" fill="#66BB6A"/>
+              <rect x="20" y="29" width="13" height="5" rx="2.5" fill="#E8B93A" transform="rotate(20 20 29)"/>
+              <rect x="47" y="29" width="13" height="5" rx="2.5" fill="#E8B93A" transform="rotate(-20 60 29)"/>
+              <rect x="33" y="44" width="6" height="16" rx="3" fill="#66BB6A"/>
+              <rect x="41" y="44" width="6" height="16" rx="3" fill="#66BB6A"/>
+            </svg>
             <div>
-              <div class="font-display font-bold text-xs text-white/60 uppercase tracking-wider">Agencia de Enfermería</div>
-              <div class="font-display font-black text-xl text-brand-gold-light leading-none">Servicios de Luna</div>
+              <div class="font-display font-bold text-xs text-white/70">FISIOTERAPIA Y REHABILITACIÓN</div>
+              <div class="font-display font-black text-lg text-brand-green-light leading-none">EMERA</div>
             </div>
           </div>
-          <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-4">Atención integral para el cuidado de tu salud. Cuidamos a quien más quieres con profesionalismo, calidez y dedicación.</p>
-          <div class="flex items-center gap-3">
-            <a href="https://web.facebook.com/serviiciosdeluna?rdid=U7WSwWrqJfDtUIpg&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1Dzzbb2FLm%2F%3F_rdc%3D1%26_rdr#" target="_blank" rel="noopener"
-               class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center hover:bg-blue-600 hover:scale-110 transition-all" aria-label="Facebook de Servicios de Luna">
-              <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
-            </a>
-            <a href="https://www.instagram.com/serviciosdeluna/" target="_blank" rel="noopener"
-               class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center hover:scale-110 transition-all social-instagram-hover" aria-label="Instagram de Servicios de Luna">
-              <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
-            </a>
-          </div>
+          <p class="text-white/60 text-sm leading-relaxed max-w-xs">Recupera tu movimiento y vive sin dolor con atención especializada y personalizada, en clínica o a domicilio.</p>
         </div>
 
         <div>
-          <h4 class="font-display font-bold text-xs uppercase tracking-widest text-white/40 mb-4">Servicios</h4>
+          <h4 class="font-display font-bold text-xs uppercase tracking-widest text-white/40 mb-4">Navegación</h4>
           <ul class="space-y-2">
-            <li><a href="#servicios" class="text-white/70 hover:text-brand-gold-light text-sm transition-colors">Enfermeras y Cuidadoras</a></li>
-            <li><a href="#servicios" class="text-white/70 hover:text-brand-gold-light text-sm transition-colors">Consulta Médica a Domicilio</a></li>
-            <li><a href="#servicios" class="text-white/70 hover:text-brand-gold-light text-sm transition-colors">Oxígeno Medicinal</a></li>
-            <li><a href="#servicios" class="text-white/70 hover:text-brand-gold-light text-sm transition-colors">Fisioterapia · Nutriólogo</a></li>
-            <li><a href="#servicios" class="text-white/70 hover:text-brand-gold-light text-sm transition-colors">Laboratorios · Ambulancia</a></li>
+            <li><a href="#inicio"     class="text-white/70 hover:text-brand-green-light text-sm transition-colors">Inicio</a></li>
+            <li><a href="#servicios"  class="text-white/70 hover:text-brand-green-light text-sm transition-colors">Servicios</a></li>
+            <li><a href="#beneficios" class="text-white/70 hover:text-brand-green-light text-sm transition-colors">Beneficios</a></li>
+            <li><a href="#proceso"    class="text-white/70 hover:text-brand-green-light text-sm transition-colors">Proceso</a></li>
+            <li><a href="#contacto"   class="text-white/70 hover:text-brand-green-light text-sm transition-colors">Contacto</a></li>
           </ul>
         </div>
 
@@ -926,20 +1045,20 @@
           <h4 class="font-display font-bold text-xs uppercase tracking-widest text-white/40 mb-4">Contacto</h4>
           <ul class="space-y-3">
             <li class="flex items-center gap-2 text-white/70 text-sm">
-              <i data-lucide="phone" class="w-4 h-4 text-brand-gold-light"></i>
-              55 4003 6237
+              <i data-lucide="phone" class="w-4 h-4 text-brand-green-light"></i>
+              55 3522 6093
             </li>
             <li class="flex items-center gap-2 text-white/70 text-sm">
-              <i data-lucide="map-pin" class="w-4 h-4 text-brand-gold-light"></i>
-              CDMX y Zona Metropolitana
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-green-light"></i>
+              Av. Montevideo 303, Col. Lindavista, GAM
             </li>
             <li class="flex items-center gap-2 text-white/70 text-sm">
-              <i data-lucide="clock" class="w-4 h-4 text-brand-gold-light"></i>
-              Lun–Vie: 8:00–20:00 · Sáb: 9:00–18:00
+              <i data-lucide="clock" class="w-4 h-4 text-brand-green-light"></i>
+              Lun–Vie: 7:00–19:00 · Sáb: 7:00–14:00
             </li>
             <li class="flex items-center gap-2 text-white/70 text-sm">
-              <i data-lucide="home" class="w-4 h-4 text-brand-gold-light"></i>
-              Atención a domicilio disponible
+              <i data-lucide="home" class="w-4 h-4 text-brand-green-light"></i>
+              Terapia a domicilio disponible
             </li>
           </ul>
         </div>
@@ -947,8 +1066,8 @@
       </div>
 
       <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-white/40 text-xs">© 2024 Servicios de Luna — Agencia de Enfermería. Todos los derechos reservados.</p>
-        <p class="text-white/30 text-xs">Cuidamos a quien más quieres.</p>
+        <p class="text-white/40 text-xs">© 2026 Fisioterapia y Rehabilitación EMERA. Todos los derechos reservados.</p>
+        <p class="text-white/30 text-xs">Recupera tu movimiento, vive sin dolor.</p>
       </div>
     </div>
   </footer>
@@ -956,7 +1075,7 @@
   <!-- ============================================================ -->
   <!-- WHATSAPP FLOATING BUTTON                                     -->
   <!-- ============================================================ -->
-  <a href="https://wa.me/5215540036237?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20atenci%C3%B3n%20m%C3%A9dica%20a%20domicilio"
+  <a href="https://wa.me/5215535226093?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20fisioterapia"
      target="_blank"
      id="whatsapp-float"
      class="fixed bottom-6 left-6 z-50 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl"
@@ -967,7 +1086,7 @@
   </a>
 
   <!-- Toast Notification -->
-  <div id="toast" class="fixed bottom-24 left-6 z-50 bg-brand-navy-dark text-white px-5 py-3 rounded-xl shadow-xl text-sm font-medium hidden transition-all flex items-center gap-2">
+  <div id="toast" class="fixed bottom-24 left-6 z-50 bg-brand-blue-dark text-white px-5 py-3 rounded-xl shadow-xl text-sm font-medium hidden transition-all flex items-center gap-2">
     <svg width="16" height="16" viewBox="0 0 32 32" fill="#25D366"><path d="M16 0C7.16 0 0 7.16 0 16C0 19.08 0.84 21.96 2.34 24.44L0 32L7.76 29.7C10.16 31.06 12.98 31.86 16 31.86C24.84 31.86 32 24.7 32 15.86C32 7.02 24.84 0 16 0Z"/></svg>
     Redirigiendo a WhatsApp…
   </div>

@@ -1,5 +1,5 @@
 /* ================================================================
-   SERVICIOS DE LUNA — Agencia de Enfermería — main.js
+   FISIOTERAPIA Y REHABILITACIÓN EMERA — main.js
    100% Vanilla JavaScript — Sin librerías externas
    Big Tech Level Animations
    ================================================================ */
@@ -9,7 +9,6 @@
 /* ── Utilidades ── */
 const qs  = (s, ctx = document) => ctx.querySelector(s);
 const qsa = (s, ctx = document) => [...ctx.querySelectorAll(s)];
-const WHATSAPP_NUMBER = '5215540036237';
 
 /* ================================================================
    1. LOADER PREMIUM
@@ -24,8 +23,8 @@ const WHATSAPP_NUMBER = '5215540036237';
     <svg width="0" height="0" style="position:absolute">
       <defs>
         <linearGradient id="loaderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%"   stop-color="#1A2880"/>
-          <stop offset="100%" stop-color="#E8B93A"/>
+          <stop offset="0%"   stop-color="#2451a0"/>
+          <stop offset="100%" stop-color="#4cc44c"/>
         </linearGradient>
       </defs>
     </svg>`);
@@ -67,10 +66,10 @@ const WHATSAPP_NUMBER = '5215540036237';
   let raf;
 
   const COLORS = [
-    'rgba(232, 185, 58, 0.50)',
-    'rgba(255,255,255, 0.30)',
-    'rgba(26, 40, 128, 0.45)',
-    'rgba(200, 149, 15, 0.30)',
+    'rgba(76, 196, 76, 0.55)',
+    'rgba(255,255,255, 0.35)',
+    'rgba(36, 81, 160, 0.45)',
+    'rgba(76, 196, 76, 0.30)',
   ];
 
   function resize() {
@@ -412,13 +411,13 @@ window.handleForm = function(e) {
   const servicio = form.querySelector('select').value;
   const mensaje  = form.querySelector('textarea').value.trim();
 
-  let waMsg = `¡Hola! Me comunico desde la página web de Servicios de Luna.\n\n`;
+  let waMsg = `¡Hola! Me comunico desde la página web de Fisioterapia y Rehabilitación EMERA.\n\n`;
   waMsg += `👤 *Nombre:* ${nombre}\n`;
   waMsg += `📞 *Teléfono:* ${telefono}\n`;
   if (correo)   waMsg += `📧 *Correo:* ${correo}\n`;
-  if (servicio) waMsg += `🏥 *Servicio de interés:* ${servicio}\n`;
+  if (servicio) waMsg += `🦶 *Servicio de interés:* ${servicio}\n`;
   if (mensaje)  waMsg += `\n💬 *Mensaje:* ${mensaje}\n`;
-  waMsg += `\nMe gustaría solicitar este servicio. ¡Gracias!`;
+  waMsg += `\nMe gustaría agendar una cita. ¡Gracias!`;
 
   btn.innerHTML = `<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -427,7 +426,7 @@ window.handleForm = function(e) {
   btn.disabled = true;
 
   setTimeout(() => {
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMsg)}`, '_blank');
+    window.open(`https://wa.me/5215535226093?text=${encodeURIComponent(waMsg)}`, '_blank');
     btn.innerHTML = originalHTML;
     btn.disabled  = false;
     form.reset();

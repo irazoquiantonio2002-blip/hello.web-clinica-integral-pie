@@ -1,19 +1,17 @@
 /* ================================================================
-   SERVICIOS DE LUNA — Agencia de Enfermería — style.css
-   Paleta: Azul Navy #0E1654 · Dorado #C8950F · Plateado #8A9AAA
+   FISIOTERAPIA Y REHABILITACIÓN EMERA — style.css
+   Paleta: Azul #1565C0 · Verde #43A047 · Blanco
    Big Tech Level Animations — Pure CSS + Vanilla JS
    ================================================================ */
 
 /* ── CSS CUSTOM PROPERTIES ── */
 :root {
-  --navy:        #0E1654;
-  --navy-light:  #1A2880;
-  --navy-dark:   #07102E;
-  --gold:        #C8950F;
-  --gold-light:  #E8B93A;
-  --gold-dark:   #9A7208;
-  --silver:      #8A9AAA;
-  --silver-light:#C4CDD6;
+  --blue:        #1565C0;
+  --blue-light:  #1976D2;
+  --blue-dark:   #0D47A1;
+  --green:       #43A047;
+  --green-light: #66BB6A;
+  --green-dark:  #2E7D32;
   --white:       #ffffff;
 
   --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
@@ -27,32 +25,6 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: hidden; }
 
-/* ── UTILITY BUTTONS ── */
-.btn-gold {
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-  transition: background 0.3s var(--ease-smooth), transform 0.3s var(--ease-out-back), box-shadow 0.3s;
-}
-.btn-gold:hover {
-  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(200, 149, 15, 0.40);
-}
-.btn-navy {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
-  transition: background 0.3s, transform 0.3s var(--ease-out-back), box-shadow 0.3s;
-}
-.btn-navy:hover {
-  background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy) 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(14, 22, 84, 0.40);
-}
-
-.text-gold-light { color: var(--gold-light); }
-.text-brand-gold { color: var(--gold); }
-.text-brand-gold-dark { color: var(--gold-dark); }
-.text-brand-navy { color: var(--navy); }
-.text-brand-navy-dark { color: var(--navy-dark); }
-
 /* ================================================================
    LOADER PREMIUM
    ================================================================ */
@@ -60,7 +32,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: var(--navy-dark);
+  background: var(--blue-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +53,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   gap: 20px;
 }
 
+/* Ring SVG animado */
 .loader-logo-ring {
   position: relative;
   width: 110px;
@@ -110,6 +83,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   animation: loader-dash 1.6s var(--ease-in-out) infinite;
 }
 
+/* Definición del gradiente SVG en el HTML — se aplica como clase aquí */
 .loader-logo-img {
   position: absolute;
   inset: 14px;
@@ -129,21 +103,22 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 .loader-brand-top {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.15em;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.6);
   animation: loader-fade-text 1s ease-out 0.3s both;
 }
 
 .loader-brand-bottom {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  font-size: 1.35rem;
-  color: var(--gold-light);
-  letter-spacing: 0.04em;
+  font-size: 1.4rem;
+  color: var(--green-light);
+  letter-spacing: 0.05em;
   animation: loader-fade-text 1s ease-out 0.5s both;
 }
 
+/* Barra de progreso */
 .loader-bar-wrap {
   width: 160px;
   height: 3px;
@@ -156,7 +131,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 .loader-bar-fill {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, var(--navy-light), var(--gold-light));
+  background: linear-gradient(90deg, var(--blue-light), var(--green-light));
   border-radius: 99px;
   transition: width 0.1s linear;
 }
@@ -192,24 +167,24 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 }
 
 #navbar.scrolled {
-  background: rgba(7, 16, 46, 0.95);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  box-shadow: 0 1px 40px rgba(14, 22, 84, 0.30);
+  box-shadow: 0 1px 40px rgba(21,101,192,0.10);
 }
 
 .nav-logo-primary {
-  color: rgba(255,255,255,0.6);
-  font-size: 0.58rem;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.62rem;
   letter-spacing: 0.1em;
   transition: color 0.3s;
 }
 .nav-logo-secondary {
-  color: var(--gold-light);
+  color: var(--green-light);
   transition: color 0.3s;
 }
-#navbar.scrolled .nav-logo-primary  { color: rgba(255,255,255,0.7); }
-#navbar.scrolled .nav-logo-secondary{ color: var(--gold-light); }
+#navbar.scrolled .nav-logo-primary  { color: var(--blue); }
+#navbar.scrolled .nav-logo-secondary{ color: var(--green); }
 
 .nav-link {
   color: rgba(255,255,255,0.85);
@@ -222,39 +197,38 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   bottom: -4px;
   left: 0; right: 0;
   height: 2px;
-  background: var(--gold-light);
+  background: var(--green-light);
   border-radius: 99px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s var(--ease-out-expo);
 }
 .nav-link:hover::after { transform: scaleX(1); }
-.nav-link:hover { color: var(--gold-light); }
-#navbar.scrolled .nav-link { color: rgba(255,255,255,0.85); }
+#navbar.scrolled .nav-link { color: #334155; }
 
 .burger-line {
   background: white;
   display: block;
   transition: background 0.3s;
 }
-#navbar.scrolled .burger-line { background: white; }
+#navbar.scrolled .burger-line { background: var(--blue); }
 
 .mobile-menu {
-  background: rgba(7, 16, 46, 0.97);
+  background: rgba(255,255,255,0.97);
   backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(200, 149, 15, 0.15);
+  border-top: 1px solid rgba(26,61,124,0.08);
 }
 .mobile-nav-link {
-  color: rgba(255,255,255,0.85);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
 }
-.mobile-nav-link:hover { color: var(--gold-light); }
 
 /* ================================================================
    HERO SECTION
    ================================================================ */
 .hero-section { min-height: 100svh; }
 
+/* Imagen de fondo — JS controla el parallax vía transform */
 .hero-bg {
   will-change: transform;
   transform: scale(1.08);
@@ -268,33 +242,34 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   display: block;
 }
 
-/* Overlays — Navy profundo con toque dorado */
+/* Overlays */
 .hero-overlay-1 {
   background: linear-gradient(
     170deg,
-    rgba(7, 16, 46, 0.92) 0%,
-    rgba(14, 22, 84, 0.78) 45%,
-    rgba(7, 16, 46, 0.96) 100%
+    rgba(13, 71, 161, 0.88) 0%,
+    rgba(21, 101, 192, 0.72) 45%,
+    rgba(13, 71, 161, 0.94) 100%
   );
 }
 
 .hero-overlay-2 {
   background: radial-gradient(
     ellipse 80% 60% at 50% 0%,
-    rgba(200, 149, 15, 0.12) 0%,
+    rgba(67, 160, 71, 0.15) 0%,
     transparent 70%
   );
 }
 
+/* Gradiente de fondo animado sutil */
 .hero-overlay-animated {
   background: linear-gradient(
     130deg,
-    rgba(200, 149, 15, 0.05) 0%,
-    rgba(14, 22, 84, 0.10) 50%,
-    rgba(232, 185, 58, 0.06) 100%
+    rgba(67, 160, 71, 0.06) 0%,
+    rgba(21, 101, 192, 0.12) 50%,
+    rgba(67, 160, 71, 0.08) 100%
   );
   background-size: 300% 300%;
-  animation: gradientShift 10s ease-in-out infinite;
+  animation: gradientShift 8s ease-in-out infinite;
 }
 
 @keyframes gradientShift {
@@ -303,11 +278,11 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   100% { background-position: 0% 50%; }
 }
 
-/* Grid lines decorativas */
+/* ── GRID LINES decorativas ── */
 .hero-grid-lines {
   background-image:
-    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
   background-size: 80px 80px;
   opacity: 0;
   animation: gridFadeIn 2s ease-out 1.5s forwards;
@@ -317,7 +292,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   to { opacity: 1; }
 }
 
-/* ORBs flotantes — tonos navy y gold */
+/* ── ORBs flotantes de luz ── */
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -329,21 +304,21 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 
 .orb-1 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(232, 185, 58, 0.14) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(102, 187, 106, 0.18) 0%, transparent 70%);
   top: -120px; right: -120px;
   animation: orbFloat1 9s ease-in-out infinite;
 }
 
 .orb-2 {
   width: 380px; height: 380px;
-  background: radial-gradient(circle, rgba(26, 40, 128, 0.30) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(25, 118, 210, 0.22) 0%, transparent 70%);
   bottom: 5%; left: -100px;
   animation: orbFloat2 11s ease-in-out infinite;
 }
 
 .orb-3 {
   width: 240px; height: 240px;
-  background: radial-gradient(circle, rgba(200, 149, 15, 0.10) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(102, 187, 106, 0.12) 0%, transparent 70%);
   top: 40%; right: 10%;
   animation: orbFloat3 7s ease-in-out infinite;
 }
@@ -362,23 +337,23 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   50%       { transform: translate(-20px, 30px); }
 }
 
-/* Badge dot animado — gold */
+/* ── BADGE dot animado ── */
 .badge-dot {
   width: 8px; height: 8px;
-  background: var(--gold-light);
+  background: var(--green-light);
   border-radius: 50%;
   display: inline-block;
   flex-shrink: 0;
   animation: badgePulse 2s ease-in-out infinite;
-  box-shadow: 0 0 0 0 rgba(232, 185, 58, 0.5);
+  box-shadow: 0 0 0 0 rgba(102, 187, 106, 0.5);
 }
 
 @keyframes badgePulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 185, 58, 0.5); }
-  50%       { box-shadow: 0 0 0 6px rgba(232, 185, 58, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(102, 187, 106, 0.5); }
+  50%       { box-shadow: 0 0 0 6px rgba(102, 187, 106, 0); }
 }
 
-/* Hero entry */
+/* ── HERO ENTRY — estado inicial (JS añade .is-visible) ── */
 .hero-el {
   opacity: 0;
   transform: translateY(40px);
@@ -393,6 +368,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   transform: translateY(0);
 }
 
+/* Delays secuenciales — Stripe-style stagger */
 .hero-el--badge   { transition-delay: 0.1s; }
 .hero-el--title-1 { transition-delay: 0.25s; }
 .hero-el--title-2 { transition-delay: 0.38s; }
@@ -400,6 +376,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 .hero-el--ctas    { transition-delay: 0.65s; }
 .hero-el--cards   { transition-delay: 0.78s; }
 
+/* Scroll indicator */
 #scroll-hint {
   opacity: 0;
   animation: scrollHintAppear 1s var(--ease-out-expo) 1.8s forwards;
@@ -409,9 +386,9 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   to { opacity: 1; }
 }
 
-/* Gradiente de texto — gold */
-.text-gradient-gold {
-  background: linear-gradient(135deg, #E8B93A 0%, #FFF3B0 45%, #C8950F 100%);
+/* ── GRADIENTE DE TEXTO VERDE ── */
+.text-gradient-green {
+  background: linear-gradient(135deg, #81C784 0%, #C8E6C9 45%, #66BB6A 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -424,15 +401,15 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   100% { background-position: 200% center; }
 }
 
-/* Glass cards — Navy base */
+/* ── GLASS CARDS ── */
 .glass-card {
-  background: rgba(14, 22, 84, 0.25);
+  background: rgba(255,255,255,0.10);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(232, 185, 58, 0.18);
+  border: 1px solid rgba(255,255,255,0.18);
   box-shadow:
-    0 8px 32px rgba(0,0,0,0.22),
-    inset 0 1px 0 rgba(255,255,255,0.12);
+    0 8px 32px rgba(0,0,0,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.2);
   transition:
     transform 0.4s var(--ease-out-back),
     box-shadow 0.4s var(--ease-smooth),
@@ -440,14 +417,14 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 }
 
 .glass-card:hover {
-  background: rgba(14, 22, 84, 0.38);
+  background: rgba(255,255,255,0.16);
   box-shadow:
-    0 20px 50px rgba(0,0,0,0.28),
-    0 0 0 1px rgba(232, 185, 58, 0.25),
-    inset 0 1px 0 rgba(255,255,255,0.18);
+    0 20px 50px rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.3);
   transform: translateY(-6px) scale(1.02);
 }
 
+/* Cards con flotación continua individual */
 .stat-card[data-float-delay="0"]   { animation: cardFloat 4.5s ease-in-out infinite 0s; }
 .stat-card[data-float-delay="200"] { animation: cardFloat 4.5s ease-in-out infinite 0.6s; }
 .stat-card[data-float-delay="400"] { animation: cardFloat 4.5s ease-in-out infinite 1.2s; }
@@ -457,13 +434,13 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   50%       { transform: translateY(-8px); }
 }
 
-/* CTAs */
+/* ── CTAs ── */
 .cta-primary {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  background: var(--green);
   box-shadow:
-    0 6px 24px rgba(200, 149, 15, 0.55),
+    0 6px 24px rgba(67, 160, 71, 0.50),
     0 2px 8px rgba(0,0,0,0.15);
   transition:
     background 0.3s var(--ease-smooth),
@@ -472,10 +449,10 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 }
 
 .cta-primary:hover {
-  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+  background: var(--green-dark);
   transform: translateY(-3px) scale(1.02);
   box-shadow:
-    0 14px 40px rgba(200, 149, 15, 0.60),
+    0 14px 40px rgba(67, 160, 71, 0.55),
     0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -483,13 +460,14 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
   transform: translateY(0) scale(0.98);
 }
 
+/* Shimmer sweep effect */
 .cta-shimmer {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     105deg,
     transparent 30%,
-    rgba(255,255,255,0.30) 50%,
+    rgba(255,255,255,0.35) 50%,
     transparent 70%
   );
   transform: translateX(-100%);
@@ -511,14 +489,14 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 
 .cta-secondary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255,255,255,0.10);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.55) !important;
 }
 
-/* Scroll indicator */
+/* ── SCROLL INDICATOR ── */
 .scroll-mouse {
   width: 22px; height: 34px;
-  border: 2px solid rgba(255,255,255,0.30);
+  border: 2px solid rgba(255,255,255,0.35);
   border-radius: 99px;
   display: flex;
   justify-content: center;
@@ -527,7 +505,7 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 
 .scroll-dot {
   width: 4px; height: 6px;
-  background: rgba(232, 185, 58, 0.7);
+  background: rgba(255,255,255,0.6);
   border-radius: 99px;
   animation: scrollBounce 2s ease-in-out infinite;
 }
@@ -575,19 +553,6 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 
 .service-card-img img { will-change: transform; }
 
-.service-card-header-gold,
-.service-card-header-navy,
-.service-card-header-dark {
-  background: linear-gradient(135deg, var(--header-from), var(--header-to));
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.service-card-header-gold { --header-from: var(--gold-dark); --header-to: var(--gold); }
-.service-card-header-navy { --header-from: var(--navy); --header-to: var(--navy-light); }
-.service-card-header-dark { --header-from: var(--navy-dark); --header-to: var(--navy); }
-
 /* ================================================================
    BENEFIT ITEMS
    ================================================================ */
@@ -610,14 +575,14 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 }
 .info-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 14px 44px rgba(14, 22, 84, 0.12);
+  box-shadow: 0 14px 44px rgba(26,61,124,0.10);
 }
 
 /* ================================================================
    CTA BANNER
    ================================================================ */
 .cta-banner-bg {
-  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, #1A1A5E 100%);
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 60%, #1B5E20 100%);
 }
 .cta-img-side { min-height: 280px; }
 @media (min-width: 1024px) { .cta-img-side { min-height: 500px; } }
@@ -625,21 +590,13 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
 /* ================================================================
    PROCESS STEPS
    ================================================================ */
-.step-gold,
-.step-navy {
-  background: linear-gradient(135deg, var(--step-from), var(--step-to));
-  box-shadow: 0 8px 24px var(--step-shadow);
-}
-.step-gold { --step-from: var(--gold); --step-to: var(--gold-dark); --step-shadow: rgba(200, 149, 15, 0.40); }
-.step-navy { --step-from: var(--navy); --step-to: var(--navy-dark); --step-shadow: rgba(14, 22, 84, 0.40); }
-
 .step-number {
   transition: transform 0.35s var(--ease-out-back);
 }
 .process-step:hover .step-number { transform: scale(1.1) rotate(-4deg); }
 
 /* ================================================================
-   SCROLL REVEAL
+   SCROLL REVEAL (JS añade .visible)
    ================================================================ */
 .animate-on-scroll {
   opacity: 0;
@@ -695,17 +652,6 @@ body { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; overflow-x: 
    FOOTER
    ================================================================ */
 footer a { transition: color 0.2s; }
-
-/* ================================================================
-   SOCIAL ICONS
-   ================================================================ */
-:root {
-  --instagram-gradient: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-.social-instagram-bg,
-.social-instagram-hover:hover {
-  background: var(--instagram-gradient);
-}
 
 /* ================================================================
    RESPONSIVE
